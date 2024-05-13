@@ -93,7 +93,7 @@ h1 {
 .sv-action-bar-item--active .sv-action-bar-item__icon use {
   fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
 }
-svc-tabbed-menu-item--selected {
+.svc-tabbed-menu-item--selected {
   background: var(--sjs-general-backcolor, var(--background, #fff));
   box-shadow: inset 0px -2px 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
 }
@@ -214,4 +214,5 @@ svc-tabbed-menu-item--selected {
   background-size: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
   fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
 }
+
 

@@ -4,6 +4,7 @@ import { get, update } from '../redux/surveys'
 import { SurveyCreator, SurveyCreatorComponent } from 'survey-creator-react'
 import 'survey-creator-core/survey-creator-core.css'
 import { SurveyPanel } from 'survey-react-ui'
+import { localization } from "survey-creator-core";
 
 const Editor = (params: { id: string }): React.ReactElement => {
     const dispatch = useReduxDispatch()
@@ -25,11 +26,16 @@ const Editor = (params: { id: string }): React.ReactElement => {
         dispatch(update({ id: params.id, json: creator.JSON, text: creator.text }))
         callback(saveNo, true);
     }
-    
+    const enLocale = localization.getLocale("en");
+    enLocale.ed.addNewQuestion = "New Question";
+    enLocale.ed.addNewTypeQuestion = "New {0}";
 
+    
     useEffect(() => {
+      
         
         (async () => {
+            
             creator.toolbox.defineCategories([
                 {
                     category: "Text Input",

@@ -12,7 +12,7 @@ function App() {
         <Router>
           <div className="sjs-client-app">
             <header className="sjs-client-app__header">
-              <img src={logo} className="sjs-client-app__logo" alt="logo" height={'50px'} />
+              <img src={logo} className="sjs-client-app__logo" alt="logo" height={'80px'} width={'80px'} />
               <NavBar/>
             </header>
             <main className="sjs-client-app__content">
