@@ -1,0 +1,217 @@
+.sjs-client-app {
+  color: #404040;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sjs-client-app__logo {
+  vertical-align: middle;
+}
+
+.sjs-client-app__header {
+  background-color: var(--primary, #01265A);
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.sjs-nav-button {
+  display: inline-block;
+  margin-left: 24px;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  line-height: 40px;
+  color: white;
+}
+
+.sjs-nav-button:hover,
+.sjs-nav-button.active {
+  text-decoration: underline;
+}
+
+.sjs-client-app__content {
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  user-select: none;
+}
+
+h1 {
+  padding-left: 24px;
+}
+
+.sjs-client-app__content--about h1,
+.sjs-client-app__content--surveys-list h1 {
+  padding: 0;
+}
+
+.sjs-client-app__content--surveys-list,
+.sjs-client-app__content--about {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* .sjs-client-app__footer {} */
+
+.sjs-editor-container {
+  height: calc(100% - 2px);
+}
+
+.sjs-results-container {
+  height: calc(100% - 88px);
+}
+
+.sjs-results-content {
+  height: 100%;
+}
+
+.sjs-results-placeholder {
+  line-height: 200px;
+  text-align: center;
+  border: 1px dotted lightgray;
+}
+
+.svc-creator__non-commercial-text {
+  color: var(--sjs-primary-forecolor, var(--primary-foreground, #29a539));
+  --default-bold-font-size: var(--sjs-font-size, calc(2 * var(--sjs-base-unit, var(--base-unit, 8px))));
+  font-family: var(--sjs-font-family,var(--font-family) );
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--sjs-font-size, calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px)))));
+  line-height: calc(1.5 * var(--default-bold-font-size));
+  vertical-align: middle;
+  padding: calc(1.5 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(16 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  display: none;
+
+}
+.svc-tabbed-menu-item--selected:hover, .svc-tabbed-menu-item--selected:focus {
+  background: var(--sjs-general-backcolor, var(--background, #fff));
+  box-shadow: inset 0px -2px 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.sv-action-bar-item--active .sv-action-bar-item__icon use {
+  fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+svc-tabbed-menu-item--selected {
+  background: var(--sjs-general-backcolor, var(--background, #fff));
+  box-shadow: inset 0px -2px 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+
+
+/* .sd-btn {
+ 
+  color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+ 
+  box-shadow: var(--sjs-shadow-small, 0px 1px 2px 0px rgba(0, 0, 0, 0.15)), 0 0 0 0px var(--sjs-primary-backcolor, var(--primary, #19b394));
+} */
+.svc-toolbox__item-banner .sv-svg-icon use {
+  fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.svc-btn .svc-text {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+
+
+.svc-creator .svc-page .svc-page__content--selected.svc-page__content--selected,
+.svc-creator .svc-page .svc-page__content--selected:focus.svc-page__content--selected,
+.svc-hovered.svc-page__content--selected {
+  box-shadow: 0 0 0 2px inset var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+  background: var(--sjs-secondary-backcolor-semi-light, rgba(255, 152, 20, 0.1));
+}
+.sv-popup__button:hover {
+  box-shadow: 0 0 0 2px var(--primary, #01265A);
+}
+.svc-toolbox__tool .sv-dots__item:hover:enabled,
+.svc-toolbox__tool .sv-dots__item:focus:enabled,
+
+.svc-toolbox__tool .sv-dots__item:hover:enabled .sv-svg-icon use,
+.svc-toolbox__tool .sv-dots__item:focus:enabled .sv-svg-icon use,
+.svc-toolbox__tool .sv-dots__item.sv-action-bar-item--pressed .sv-svg-icon use {
+  fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+
+.svc-page-navigator-item--selected .svc-page-navigator-item__dot {
+  width: var(--sjs-base-unit, var(--base-unit, 8px));
+  height: var(--sjs-base-unit, var(--base-unit, 8px));
+  right: calc(50% - 1.5 * var(--sjs-base-unit, var(--base-unit, 8px)) / 2);
+  top: calc(50% - 1.5 * var(--sjs-base-unit, var(--base-unit, 8px)) / 2);
+  background: var(--sjs-general-backcolor, var(--background, #fff));
+  border: calc(0.25 * (var(--sjs-base-unit, var(--base-unit, 8px)))) solid var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.svc-image-item-value--file-dragging .sd-imagepicker__image {
+  border: 2px solid var(--sjs-primary-backcolor, var(--primary, #01265A));
+  background-color: var(--sjs-primary-backcolor-light, var(--primary-light, rgba(25, 179, 148, 0.1)));
+}
+
+.sv-drag-drop-ghost {
+  top: calc(0.75 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  width: 100%;
+  height: calc(0.5 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  background: var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+  position: absolute;
+}
+.svc-page--drag-over-empty:after {
+  content: " ";
+  position: absolute;
+  background: var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+  left: calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  bottom: calc(11.5 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  width: calc(100% - 48px);
+  height: 2px;
+}
+.svc-dragged-element-shortcut .sv-svg-icon use {
+  fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+
+.sd-panel .svc-question__content.svc-question__content--selected:not(.svc-question__content--dragged) {
+  border: 1px solid var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+  box-shadow: 0 0 0 1px var(--sjs-secondary-backcolor, var(--secondary, #01265A)) inset;
+}
+.svc-question__content--selected:not(.svc-question__content--dragged) {
+  box-shadow: 0 0 0 2px var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+}
+.sd-title.sd-container-modern__title {
+  display: flex;
+  align-items: center;
+  padding: var(--sd-page-vertical-padding) var(--sd-page-vertical-padding);
+  overflow: auto;
+  font-family: var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family) ) );
+  gap: calc(4 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  box-shadow: 0px 2px 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.spg-question__content {
+  width: 100%;
+  color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  cursor: pointer;
+}
+.spg-question--location--left:focus-within {
+  box-shadow: inset 0 0 0 2px var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.spg-input:focus,
+.spg-input.spg-dropdown:focus,
+.spg-input.spg-dropdown:focus-within,
+.spg-input-container:focus-within {
+  box-shadow: inset 0 0 0 2px var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+.svc-side-bar__container-header {
+  background: var(--sjs-general-backcolor, var(--background, #fff));
+  box-shadow: inset 0px -2px 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
+  line-height: calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  display: flex;
+  height: calc(8 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+}
+
+.spg-checkbox--checked .spg-checkbox__svg {
+  display: block;
+  width: calc(2.5 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  height: calc(2.5 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  background-repeat: no-repeat;
+  background-size: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
+}
+
