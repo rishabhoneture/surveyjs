@@ -214,5 +214,90 @@ h1 {
   background-size: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
   fill: var(--sjs-primary-backcolor, var(--primary, #01265A));
 }
+sv-list__item.sv-list__item--selected .sv-list__item-body, .sv-list__item.sv-list__item--selected:hover .sv-list__item-body, .sv-list__item.sv-list__item--selected.sv-list__item--focused .sv-list__item-body, .sv-multi-select-list .sv-list__item.sv-list__item--selected.sv-list__item--focused .sv-list__item-body, li:focus .sv-list__item.sv-list__item--selected .sv-list__item-body {
+  background-color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  color: var(--sjs-primary-forecolor, var(--primary-foreground, #fff));
+  font-weight: 600;
+}
+/* for preview */
+.sd-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px)))) calc(6 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  background: var(--sjs-questionpanel-backcolor, var(--sjs-question-background, var(--sjs-general-backcolor, var(--background, #fff))));
+  border-radius: var(--sjs-corner-radius, 4px);
+  cursor: pointer;
+  font-family: var(--sjs-font-family,var(--font-family,var(--sjs-default-font-family) ) );
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--sjs-font-size, 16px);
+  line-height: calc(1.5 * (var(--sjs-font-size, 16px)));
+  text-align: center;
+  color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  border: none;
+  outline: none;
+  box-shadow: var(--sjs-shadow-small, 0px 1px 2px 0px rgba(0, 0, 0, 0.15)), 0 0 0 0px var(--sjs-primary-backcolor, var(--primary, #19b394));
+  transition: box-shadow var(--sjs-transition-duration, 150ms), background var(--sjs-transition-duration, 150ms);
+}
 
-
+.sv-action-bar-item--secondary .sv-action-bar-item__icon use {
+  fill: var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+}
+.svc-panel__add-new-question .svc-text {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  margin: var(--sjs-base-unit, var(--base-unit, 8px)) calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  line-height: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+  color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  text-wrap: nowrap;
+}
+.sv-list__item.sv-list__item--selected .sv-list__item-body, .sv-list__item.sv-list__item--selected:hover .sv-list__item-body, .sv-list__item.sv-list__item--selected.sv-list__item--focused .sv-list__item-body, .sv-multi-select-list .sv-list__item.sv-list__item--selected.sv-list__item--focused .sv-list__item-body, li:focus .sv-list__item.sv-list__item--selected .sv-list__item-body {
+  background-color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  color: var(--sjs-primary-forecolor, var(--primary-foreground, #fff));
+  font-weight: 600;}
+  .svc-question__content-actions .sv-action--convertTo .sv-action-bar-item__title::after {
+    content: " ";
+    display: inline-block;
+    margin-inline-start: calc(0.5 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+    width: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+    height: calc(2 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+    vertical-align: bottom;
+  
+  }
+  .sd-item--checked .sd-item__decorator {
+    background: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  }
+  .sd-item--disabled.sd-item--disabled .sd-item__decorator, .sd-item__decorator {
+    --sjs-internal-font-editorfont-size: var(--sjs-mobile-font-editorfont-size, var(--sjs-font-editorfont-size, var(--sjs-font-size, 16px)));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+    height: calc(3 * (var(--sjs-base-unit, var(--base-unit, 8px))));
+    box-sizing: border-box;
+    background-color: var(--sjs-editorpanel-backcolor, var(--sjs-editor-background, var(--sjs-general-backcolor-dim-light, var(--background-dim-light, #f9f9f9))));
+    border: none;
+    flex-shrink: 0;
+    margin-top: calc((1.5 * (var(--sjs-internal-font-editorfont-size)) - 3 * (var(--sjs-base-unit, var(--base-unit, 8px)))) / 2);
+    box-shadow: var(--sjs-shadow-inner, inset 0px 1px 2px 0px rgba(0, 0, 0, 0.15)), 0 0 0 0px var(--sjs-primary-backcolor, var(--primary, #01265A));
+    transition: box-shadow var(--sjs-transition-duration, 150ms), background var(--sjs-transition-duration, 150ms);
+  }
+  .svc-hovered.svc-page__content:not(.svc-page__content--new) {
+    background: var(--sjs-secondary-backcolor-semi-light, #01265A);
+  }
+  .sv-button-group__item--selected {
+    font-weight: 600;
+    color: var(--sjs-primary-backcolor, var(--primary, #01265A));
+  }
+  .spg-editor--highlighted .spg-checkbox__control + .spg-checkbox__rectangle {
+    outline: 2px solid var(--sjs-secondary-backcolor, var(--secondary, #01265A));
+    outline-offset: -2px;
+  }
+  .spg-checkbox__control:focus + .spg-checkbox__rectangle {
+    outline: 2px solid var(--sjs-primary-backcolor, var(--primary, #01265A));
+    outline-offset: -2px;
+  }
+  

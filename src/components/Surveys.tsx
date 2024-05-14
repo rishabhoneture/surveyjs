@@ -25,7 +25,7 @@ const Surveys = (): React.ReactElement => {
                         <Link className='sjs-button' to={'run/' + survey.id}><span>Run</span></Link>
                         <Link className='sjs-button' to={'edit/' + survey.id}><span>Edit</span></Link>
                         <Link className='sjs-button' to={'results/' + survey.id}><span>Results</span></Link>
-                        <span className='sjs-button sjs-remove-btn' onClick={() => dispatch(remove(survey.id))}>Remove</span>
+                        <span className='sjs-remove-btn' onClick={() => dispatch(remove(survey.id))}>Remove</span>
                     </td>
                 </tr>
             )}
